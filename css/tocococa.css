@@ -1,1 +1,6 @@
-body{font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue    ","Hel",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:14pt}#page{margin-left:1em}
+body{
+    font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","Hel",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size:14pt;
+    background-color: rgb(0, 0, 0);
+    color: blueviolet;
+}#page{margin-left:1em}
