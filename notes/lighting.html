@@ -6,25 +6,30 @@
     <div id="page">
         <section class="container">
             <h1>DYIng lights to my ebike.</h1>
-            <p> I have a Trek Marlin 6 to which I added a Bafang BBS02 48V electric conversion kit, with a 14 Ah battery pack.
-                Considering the size of the battery, I decided to add fixed LED lights to the bike, so that I could use the battery to power them and not have to worry about charging them separately.
-                The issue with this, is that while most brand-name electric bicycles with Brose, Bosch, Yamaha or Shimano drive trains, sometimes come with an auxiliary power output for lights, the Bafang BBS02
-                as a 6V 0.5A output or around 3W, which is not enough to power most lights. This auxiliary connector is turned on whenever I turn on the display backlight on the trip computer,
-                so I toyed with the idea of using a relay to turn on the lights whenever the display backlight was on. Mostly due to laziness and the fact that I wanted something simple that I could
+            <p> I have a Trek Marlin 6 which has a Bafang BBS02 48V electric conversion kit with a 14 Ah battery pack.
+                Considering the size of the battery, adding lights that could use the battery to power them and not
+                have to worry about charging them separately sounded like a good idea.
+                The issue with this, is that while most brand-name electric bicycles with Brose, Bosch, Yamaha or Shimano drive trains sometimes come with
+                an auxiliary power output for lights, the Bafang BBS02 has 6V 0.5A auxillary output, which is not enough to power most lights.
+                This auxiliary connector is turned on whenever I turn on the display backlight on the trip computer, so I toyed with the idea of using a
+                relay to turn on the lights whenever the display backlight was on, but mostly due to laziness and the fact that I wanted something simple that I could
                 do in a single day, I got a handlebar-mounted switch instead.
             </p>
             <p>
-                Another consideration was that ebike headlights and tail lights are quite expensive, so I got a $3 5W red LED sold as a "truck position light" for the taillight, and a $10 10W LED "motorcycle fog light"
-                from AliExpress for the headlight. I still plan on getting a proper StVZO compliant headlight, but I'm not in a hurry to do so.
+                Another consideration was that ebike headlights and tail lights are expensive, so instead I got a $3 12V 5W red LED sold as a "led trailer side marker"
+                for the taillight, and a $10 12V 10W LED "motorcycle fog light" from AliExpress for the headlight. I still plan on getting a proper StVZO
+                compliant headlight, but I'm not in a hurry to do so.
             </p>
             <p>
-                I got a Kohree 48V to 12V DC-DC converter, which is overspecced for this application, as it can provide up to 240W, but it came in a nice watertight enclosure and it looked sturdier than the other options I found.
-                I made a small wooden adaptor so I could screw it to the frame, and I used a couple of zip-ties to hold it in place. I also got an inline fuse holder and a 2A fuse,
-                just in case something goes wrong, even though the DC-DC converter is supposed to have short-circuit protection.
+                To step down the voltage fr0m 48 V to something more manageable, I bought a Kohree 48V to 12V DC-DC converter off Amazon, which is overspecced
+                for this application, as it can provide up to 240W, but it came in a nice watertight enclosure and it looked sturdier than the other options I found.
+                I made a small wooden adaptor to which I could screw it, and then zip-tie it to the seat tube. I also got an inline fuse
+                holder and a 2A fuse, just in case something goes wrong, even though the DC-DC converter is supposed to have short-circuit protection.
             </p>
             <p>
-                The wiring was done with stranded AWG 20 cable, except for the Y-splitter to the motor and the fuse holder, which are AWG 14.
-                I used quick disconnect connectors for the lights, so I can remove them easily if I need to.
+                The wiring was done with stranded AWG 20 cable, except for the XT-60 Y-splitter to the motor
+                and the fuse holder, which are AWG 14 and used heat shrink on every soldered connection. Just before each light, I installed quick disconnect connectors
+                so I could easily remove them if I needed to.
             </p>
             <div class="img">
                 <img src="../media/wiring.svg" alt="wiring_diagram" style="width:80%">
@@ -126,7 +131,7 @@
             <p>
                 The full list of materials was:
                 <ul>
-                    <li> 5W red LED "truck position light" </li>
+                    <li> 5W red LED "trailer side marker" </li>
                     <li> 10W LED "motorcycle fog light" </li>
                     <li> Kohree 48V to 12V DC-DC converter </li>
                     <li> Inline car fuse holder </li>
