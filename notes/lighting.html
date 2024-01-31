@@ -1,0 +1,151 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+    <title>Lighting</title>
+    <link rel="stylesheet" href="../css/tocococa.css">
+<body>
+    <div id="page">
+        <section class="container">
+            <h1>DYIng lights to my ebike.</h1>
+            <p> I have a Trek Marlin 6 to which I added a Bafang BBS02 48V electric conversion kit, with a 14 Ah battery pack.
+                Considering the size of the battery, I decided to add fixed LED lights to the bike, so that I could use the battery to power them and not have to worry about charging them separately.
+                The issue with this, is that while most brand-name electric bicycles with Brose, Bosch, Yamaha or Shimano drive trains, sometimes come with an auxiliary power output for lights, the Bafang BBS02
+                as a 6V 0.5A output or around 3W, which is not enough to power most lights. This auxiliary connector is turned on whenever I turn on the display backlight on the trip computer,
+                so I toyed with the idea of using a relay to turn on the lights whenever the display backlight was on. Mostly due to laziness and the fact that I wanted something simple that I could
+                do in a single day, I got a handlebar-mounted switch instead.
+            </p>
+            <p>
+                Another consideration was that ebike headlights and tail lights are quite expensive, so I got a $3 5W red LED sold as a "truck position light" for the taillight, and a $10 10W LED "motorcycle fog light"
+                from AliExpress for the headlight. I still plan on getting a proper StVZO compliant headlight, but I'm not in a hurry to do so.
+            </p>
+            <p>
+                I got a Kohree 48V to 12V DC-DC converter, which is overspecced for this application, as it can provide up to 240W, but it came in a nice watertight enclosure and it looked sturdier than the other options I found.
+                I made a small wooden adaptor so I could screw it to the frame, and I used a couple of zip-ties to hold it in place. I also got an inline fuse holder and a 2A fuse,
+                just in case something goes wrong, even though the DC-DC converter is supposed to have short-circuit protection.
+            </p>
+            <p>
+                The wiring was done with stranded AWG 20 cable, except for the Y-splitter to the motor and the fuse holder, which are AWG 14.
+                I used quick disconnect connectors for the lights, so I can remove them easily if I need to.
+            </p>
+            <div class="img">
+                <img src="../media/wiring.svg" alt="wiring_diagram" style="width:80%">
+                <p class="img_footer">Wiring diagram. Not shown are the quick disconnect connectors for the lights and the XT-60 Y-splitter to the motor.</p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/bracket1.jpg" alt="brackets" style="width:70%">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/bracket2.jpg" alt="brackets" style="width:70%">    
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/connector.jpg" alt="connector" style="width:70%">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/rear.jpg" alt="rear" style="width:70%">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="img_footer">Wooden bracket for the rear light, light with a quick disconnect connector and rear light mounted to the seat post.</p>
+            </div>
+            
+            <p>
+                There's a cable run from the DC-DC converter mounted on the seat tube, to the handlebar switch,
+                where it splits in two, and one pair of cables goes to the front light, and another pair goes to the rear light.
+                All of these cables are run under the top tube and held in place with zip ties.
+            </p>
+
+            <div class="row">
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/switch.jpg" alt="switch" style="width:70%">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/harness.jpg" alt="harness" style="width:70%">    
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/mounted.jpg" alt="mounted" style="width:70%">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="img_footer">Handlebar switch, Y-splitter soldered together and DC-DC converter mounted to the bike.</p>
+            </div>
+
+            <p>
+                The Y-splitter with the fuse holder tucks nicely in the joint between the top tube and the seat tube,
+                which is connected to a cable coming up from the battery pack and another cable going back down
+                to the motor.
+            </p>
+            
+            <div class="row">
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/front.jpg" alt="front" style="width:70%">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/cables.jpg" alt="harness" style="width:70%">    
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img">
+                        <img src="../media/wire2.jpg" alt="mounted" style="width:70%">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="img_footer">Front LED light and a bit of the re-wiring process.</p>
+            </div>
+            
+            <p>
+                I had to get a bit creative with the front light, as the housing was rather large
+                and I did not want it to be in the way of the handlebars, so I used a metal L bracket
+                to mount it to the fork crown. The DC-DC converter is screwed to a wooden bracket
+                and then zip-tied to the seat tube.
+            </p>
+
+            <div class="img">
+                <img src="../media/bike.jpg" alt="lights_at_night" style="width:70%">
+                <p class="img_footer">The end result, at night.</p>
+            </div>
+
+            <p>
+                The full list of materials was:
+                <ul>
+                    <li> 5W red LED "truck position light" </li>
+                    <li> 10W LED "motorcycle fog light" </li>
+                    <li> Kohree 48V to 12V DC-DC converter </li>
+                    <li> Inline car fuse holder </li>
+                    <li> 2A fuses </li>
+                    <li> AWG 20 stranded cable pair</li>
+                    <li> Quick disconnect connectors </li>
+                    <li> AWG 14 XT-60 Y-splitter dual male, single female </li>
+                    <li> Handlebar switch </li>
+                    <li> Metal L bracket and a screw I had lying around </li>
+                    <li> Two blocks of wood </li>
+                    <li> Zip ties (lots of them) </li>
+                    <li> Assorted heat shrink tubes </li>
+                </ul>
+                
+            </p>
+            <p>
+                Plus a few tools, such as a soldering iron, multimeter, drill, saw,
+                screwdriver, pliers, wood router and a heat gun. The total cost, not
+                including the tools, was around $70, and it took me about 3 hours to
+                complete the installation.
+            </p>
+</body>     
