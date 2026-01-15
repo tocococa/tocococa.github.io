@@ -1,8 +1,9 @@
 body{
     font-family:"Times New Roman", Times, serif;
     font-size:16pt;
-    background-color: rgb(5, 0, 7);
-    color: #4b8d0e;
+    background: linear-gradient(to bottom, #011800, #241700);
+    min-height: 100vh;
+    color: rgb(255, 151, 0);
     padding-left: 20%;
     padding-right: 20%;
 }#page{margin-left:1em}
