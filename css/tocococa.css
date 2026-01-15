@@ -31,11 +31,29 @@ ul {
     padding: 5px;
   }
 
+.footer-img {
+    width: 5%;
+    max-width: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 600px) {
     body {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
         margin: 0;
+    }
+    
+    #page {
+        margin-left: 0;
+    }
+    
+    .footer-img {
+        width: 10%;
     }
 }
 
