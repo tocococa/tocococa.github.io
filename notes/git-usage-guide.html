@@ -19,8 +19,8 @@
         </p>
         <p>
             This guide takes inspiration from <a href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model</a> 
-            along with <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> and is also loosly based on the Git flow that 
-            we used while I was at Levita Magnetics. The one important disctintion, is the use of <code>git rebase</code> before merging a feature 
+            along with <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> and is also loosely based on the Git flow that 
+            we used while I was at Levita Magnetics. The one important distinction, is the use of <code>git rebase</code> before merging a feature 
             branch into a release or working branch, to avoid polluting the history of the repo. This is entirely a preference of the author and 
             open to debate.
         </p>
@@ -45,7 +45,7 @@
 
         <h2>Branching and merging</h2>
         <p>
-            Creating a branch off another one is very simple, to craete a new branch and move to it, run <code>git checkout -b &lt;branch_name&gt;</code>.
+            Creating a branch off another one is very simple, to create a new branch and move to it, run <code>git checkout -b &lt;branch_name&gt;</code>.
         </p>
         <p>
             Once you've done some changes, use <code>git add &lt;file1&gt; &lt;file2&gt;</code> to stage your changes. If you want to add all 
@@ -60,7 +60,7 @@
             Once you are ready to open a pull request you should <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">squash all 
             your commits and then rebase your branch</a>, to do this, first make sure your branch and any others are up to date by running 
             <code>git fetch --all --prune</code>, then to squash your changes w.r.t. merge-base, run <code>git rebase -i $(get merge-base HEAD @{u})</code>, 
-            where <code>@{u}</code> should automatically pick up the name of the upstream branch. Then, in the text editor, for all commmits except 
+            where <code>@{u}</code> should automatically pick up the name of the upstream branch. Then, in the text editor, for all commits except 
             the first, replace <code>pick</code> with <code>squash</code> or <code>s</code>, after that is done, you can also amend the commit message 
             with <code>reword</code> or remove a commit with <code>drop</code>. In this step, you might be prompted to solve any conflicts there might be.
         </p>
@@ -118,7 +118,7 @@
             merged back to develop, as to not mess up the commit history.
         </p>
         <p>
-            The naming convention is <code>release-*</code>. This branches could also be tagged so that a version pipeline can run over them.
+            The naming convention is <code>release-*</code>. These branches could also be tagged so that a version pipeline can run over them.
         </p>
 
         <h3>Hotfix branches</h3>
@@ -141,7 +141,7 @@
             <li><code>feat(*):*</code>: indicates that progress has been made on a particular feature, for example, <code>feat(task0 launch)</code> 
                 could indicate that the Task 0 launch has been completed. This is the commit style that should be used most frequently in feature branches.</li>
             <li><code>fix(*):*</code>: indicates that a bug has been fixed, for example, <code>fix(vel 100 in reverse)</code> could indicate that 
-                a bug where the throttle input always went at 100% power in revers has been fixed.</li>
+                a bug where the throttle input always went at 100% power in reverse has been fixed.</li>
             <li><code>release(*):*</code>: indicates that a new release has been completed.</li>
             <li><code>BREAKING:*</code>: used when changes are added that could break functionality in <strong>other</strong> repositories, for 
                 example, if the format of a message that must be sent by <code>nodeA</code> but received by <code>nodeB</code> under another repo 
@@ -168,7 +168,7 @@
             <code>git switch &lt;branchname&gt;</code> - move between branches.
         </p>
         <p>
-            <code>git status</code> - see files which are not staged or committed, or what their satus is.
+            <code>git status</code> - see files which are not staged or committed, or what their status is.
         </p>
         <p>
             <code>git diff | &lt;branchname&gt;</code> - by itself, shows the diff of files changed but uncommitted or unstaged. If a branchname 
@@ -184,14 +184,14 @@
             <code>git reset --soft HEAD~1</code> - undo the last commit or merge and keep changes.
         </p>
         <p>
-            <code>git reset --hard HEAD</code>, then <code>git pull</code> - remove al uncommitted changes and then pull remote tip into the 
+            <code>git reset --hard HEAD</code>, then <code>git pull</code> - remove all uncommitted changes and then pull remote tip into the 
             current branch.
         </p>
         <p>
             <code>git log</code> - lists the commit history.
         </p>
         <p>
-            <code>git fetch -p</code> - synch the branch list.
+            <code>git fetch -p</code> - sync the branch list.
         </p>
 
         <h2>bashrc settings</h2>
