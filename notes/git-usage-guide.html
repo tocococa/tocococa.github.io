@@ -59,7 +59,7 @@
         <p>
             Once you are ready to open a pull request you should <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">squash all 
             your commits and then rebase your branch</a>, to do this, first make sure your branch and any others are up to date by running 
-            <code>git fetch --all --prune</code>, then to squash your changes w.r.t. merge-base, run <code>git rebase -i $(get merge-base HEAD @{u}</code>, 
+            <code>git fetch --all --prune</code>, then to squash your changes w.r.t. merge-base, run <code>git rebase -i $(get merge-base HEAD @{u})</code>, 
             where <code>@{u}</code> should automatically pick up the name of the upstream branch. Then, in the text editor, for all commmits except 
             the first, replace <code>pick</code> with <code>squash</code> or <code>s</code>, after that is done, you can also amend the commit message 
             with <code>reword</code> or remove a commit with <code>drop</code>. In this step, you might be prompted to solve any conflicts there might be.
