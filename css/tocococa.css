@@ -76,7 +76,7 @@ pre code {
 h1, h2, h3, p, code {
     display: block;
     width: fit-content;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     border-radius: 4px;
@@ -92,7 +92,7 @@ h1, h2, h3, p, code {
 ul {
     display: block;
     width: fit-content;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     border-radius: 4px;
