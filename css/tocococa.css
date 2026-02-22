@@ -1,17 +1,47 @@
-body{
-    font-family:"Times New Roman", Times, serif;
-    font-size:16pt;
-    background: linear-gradient(to bottom, #011800, #241700);
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16pt;
+    background: rgb(0, 0, 0);
     min-height: 100vh;
-    color: rgb(255, 151, 0);
+    color: rgb(255, 153, 0);
     padding-left: 20%;
     padding-right: 20%;
-}#page{margin-left:1em}
+}
 
-h1 {text-align: left;}
-p {text-align: left;}
-div {text-align: center;}
-h2 {text-align: left;}
+#page {
+    margin-left: 1em;
+}
+
+h1 {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+div {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+a {
+    color: rgb(255, 55, 20);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 100, 20);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ca0101;
+    text-decoration: underline;
+}
 
 ul {
     text-align: left;
@@ -19,23 +49,15 @@ ul {
     padding: 0;
 }
 
-.img_footer {
-    text-align: center;
-}
-
 .row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding: 5px;
-  }
-
-.footer-img {
-    width: 5%;
-    max-width: 50px;
+        display: flex;
 }
+
+.column {
+        flex: 33.33%;
+        padding: 5px;
+}
+
 
 img {
     max-width: 100%;
@@ -43,11 +65,59 @@ img {
 }
 
 code {
-    color: #788db4;
+    color: #8b9bb9;
 }
 
 pre code {
     color: #788db4;
+}
+
+
+h1, h2, h3, p, code {
+    display: block;
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 4px;
+    padding: 0.3em 0.6em;
+    clip-path: polygon(
+        8px 0%, calc(100% - 8px) 0%,
+        100% 8px, 100% calc(100% - 8px),
+        calc(100% - 8px) 100%, 8px 100%,
+        0% calc(100% - 8px), 0% 8px
+    );
+}
+
+ul {
+    display: block;
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 4px;
+    padding: 0.3em 0.6em 0.3em 1.8em;
+    list-style-position: inside;
+}
+
+footer {
+    text-align: center;
+}
+
+.img_footer {
+    text-align: center;
+}
+
+.footer-link {
+    display: block;
+    text-align: center;
+}
+
+.footer-img {
+    width: 5%;
+    max-width: 50px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -56,11 +126,11 @@ pre code {
         padding-right: 5px;
         margin: 0;
     }
-    
+
     #page {
         margin-left: 0;
     }
-    
+
     .footer-img {
         width: 10%;
     }
