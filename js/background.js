@@ -32,6 +32,12 @@
     const NUM_RAYS = 36;
     for (let i = 0; i < NUM_RAYS; i++) {
       const angle = (i / NUM_RAYS) * Math.PI * 2;
+      const angleFromVertical = Math.abs(((angle + Math.PI / 2) % Math.PI) - Math.PI / 2);
+
+      if (angleFromVertical < 0.01) {
+        continue;
+      }
+
       const len = Math.max(W, H) * 1.5;
       ctx.beginPath();
       ctx.moveTo(vx, vy);
@@ -47,9 +53,6 @@
 
       [vy - dy, vy + dy].forEach(y => {
         ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
-      });
-      [vx - dx, vx + dx].forEach(x => {
-        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
       });
     }
 

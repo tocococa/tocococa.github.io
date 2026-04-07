@@ -64,16 +64,7 @@ img {
     height: auto;
 }
 
-code {
-    color: #8b9bb9;
-}
-
-pre code {
-    color: #788db4;
-}
-
-
-h1, h2, h3, p, code {
+h1, h2, h3, p {
     display: block;
     width: fit-content;
     background: rgba(0, 0, 0, 0);
@@ -87,6 +78,39 @@ h1, h2, h3, p, code {
         calc(100% - 8px) 100%, 8px 100%,
         0% calc(100% - 8px), 0% 8px
     );
+}
+
+code {
+    display: inline;
+    color: #8b9bb9;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+}
+
+pre {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 4px;
+    padding: 0.3em 0.6em;
+    box-sizing: border-box;
+}
+
+pre code {
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    color: #788db4;
+    padding: 0;
+    white-space: pre;
+    background: transparent;
 }
 
 ul {
