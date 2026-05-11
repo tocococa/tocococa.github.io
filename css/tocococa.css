@@ -3,7 +3,7 @@ body {
     font-size: 16pt;
     background: rgb(0, 0, 0);
     min-height: 100vh;
-    color: rgb(255, 153, 0);
+    color: rgb(0, 58, 23);
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 4rem;
@@ -12,108 +12,10 @@ body {
 .bg-css {
     --bg-line-half: 0.5px;
     --bg-line-color: rgba(255,255,255,0.2);
-        background-color: #111;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        background-image:
-            linear-gradient(to bottom,
-        transparent calc(7.26%  - var(--bg-line-half)),
-        var(--bg-line-color)    calc(7.26%),
-        transparent             calc(7.26%  + var(--bg-line-half)),
-
-                transparent calc(13.99% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(13.99%),
-                transparent             calc(13.99% + var(--bg-line-half)),
-
-                transparent calc(20.21% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(20.21%),
-                transparent             calc(20.21% + var(--bg-line-half)),
-
-                transparent calc(25.91% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(25.91%),
-                transparent             calc(25.91% + var(--bg-line-half)),
-
-                transparent calc(31.04% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(31.04%),
-                transparent             calc(31.04% + var(--bg-line-half)),
-
-                transparent calc(35.61% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(35.61%),
-                transparent             calc(35.61% + var(--bg-line-half)),
-
-                transparent calc(39.64% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(39.64%),
-                transparent             calc(39.64% + var(--bg-line-half)),
-
-                transparent calc(43.09% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(43.09%),
-                transparent             calc(43.09% + var(--bg-line-half)),
-
-                transparent calc(45.90% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(45.90%),
-                transparent             calc(45.90% + var(--bg-line-half)),
-
-                transparent calc(48.01% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(48.01%),
-                transparent             calc(48.01% + var(--bg-line-half)),
-
-                transparent calc(49.43% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(49.43%),
-                transparent             calc(49.43% + var(--bg-line-half)),
-
-                transparent calc(50.57% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(50.57%),
-                transparent             calc(50.57% + var(--bg-line-half)),
-
-                transparent calc(51.99% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(51.99%),
-                transparent             calc(51.99% + var(--bg-line-half)),
-
-                transparent calc(54.10% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(54.10%),
-                transparent             calc(54.10% + var(--bg-line-half)),
-
-                transparent calc(56.91% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(56.91%),
-                transparent             calc(56.91% + var(--bg-line-half)),
-
-                transparent calc(60.36% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(60.36%),
-                transparent             calc(60.36% + var(--bg-line-half)),
-
-                transparent calc(64.39% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(64.39%),
-                transparent             calc(64.39% + var(--bg-line-half)),
-
-                transparent calc(68.96% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(68.96%),
-                transparent             calc(68.96% + var(--bg-line-half)),
-
-                transparent calc(74.09% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(74.09%),
-                transparent             calc(74.09% + var(--bg-line-half)),
-
-                transparent calc(79.79% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(79.79%),
-                transparent             calc(79.79% + var(--bg-line-half)),
-
-                transparent calc(86.01% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(86.01%),
-                transparent             calc(86.01% + var(--bg-line-half)),
-
-                transparent calc(92.74% - var(--bg-line-half)),
-                var(--bg-line-color)    calc(92.74%),
-                transparent             calc(92.74% + var(--bg-line-half)),
-
-                transparent
-            ),
-            repeating-conic-gradient(
-                from 0deg at 50% 50%,
-                transparent             0deg 9.5deg,
-                rgba(255,255,255,0.08) 9.5deg 9.65deg,
-                var(--bg-line-color)    9.65deg 9.85deg,
-                rgba(255,255,255,0.08) 9.85deg 10deg
-            );
+    background-color: #111;
+    background-image: url("/media/bg.png");
+    background-size: 24px 24px;
+    background-repeat: repeat;
 }
 
 @media (min-resolution: 1.5dppx) {
@@ -162,17 +64,17 @@ h2 {
 }
 
 a {
-    color: rgb(255, 55, 20);
+    color: rgb(54, 53, 0);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(255, 100, 20);
+    color: rgb(59, 20, 0);
     text-decoration: none;
 }
 
 a:hover {
-    color: #ca0101;
+    color: #038814;
     text-decoration: underline;
 }
 
@@ -215,7 +117,7 @@ h1, h2, h3, p {
 
 code {
     display: inline;
-    color: #8b9bb9;
+    color: #324a72;
     background: rgba(0, 0, 0, 0);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
@@ -240,7 +142,7 @@ pre code {
     display: block;
     width: max-content;
     max-width: 100%;
-    color: #788db4;
+    color: #1a273e;
     padding: 0;
     white-space: pre;
     background: transparent;
